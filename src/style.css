@@ -7,8 +7,8 @@
 }
 body{
     background: #232526;
-    background: -webkit-linear-gradient(to right,#232526,  #55575A, #828488);
-    background: linear-gradient(to right,#232526, #55575A , #828488 );
+    background: -webkit-linear-gradient(to right,#232526,  #424242, #757575, #6d6e6e);
+    background: linear-gradient(to right,#232526, #424242 , #757575, #6d6e6e );
 }
 /* Barra de rolagem Inicio*/
 ::-webkit-scrollbar{
@@ -95,10 +95,10 @@ a{
     max-height: 100vh;
     background-color: rgb(252, 252, 252);
     background: #FE002E;
-    background: -webkit-linear-gradient(to right,#FE002E,  #f52c2c, #fa4a4a,#ffbbbb);
-    background: linear-gradient(to right,#FE002E, #f52c2c , #fa4a4a,#ffbbbb );
+    background: -webkit-linear-gradient(to right,#FE002E,  #FE002E, #fa4a4a,#FC6767, #fbb2b2);
+    background: linear-gradient(to right,#FE002E, #FE002E , #fa4a4a,#FC6767, #fbb2b2 );
 }
-.imagePerson{
+/*.imagePerson{
     background-image: url(./img/Città\ -\ Abstract.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -109,7 +109,7 @@ a{
     width:400px;
     height: 410px;
     z-index: 9;
-}
+}*/
 .imgbanner{
     background-color: #ff000000;
     display: flex;
@@ -213,68 +213,151 @@ a{
 .myskills{
     display: flex;
     width: 100%;
-    background-color: violet;
+
 }
 .skills-conteiner{
-    background-color: rgb(0, 0, 0);
+
     width: 50%;
     height: 100vh;
 }
 .project-conteiner{
-    background-color: yellow;
+
     width: 50%;
     height: 100vh;
 }
 .myskills-text{
-    background-color: #f52c2c;
     height: 50px;
-    width: 80%;
-    font-size: 1.8em;
+    width: 70%;
+    font-size: 3em;
     position: relative;
     color: white;
-    left: 10%;
+    left: 20%;
     top: 5%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.html-skills{
+.skills{
     display: flex;
     position: relative;
-    background-color: red;
-    height: 20%;
-    width: 80%;
-    left: 10%;
-    top: 10%;
-  
+    height: 13vh;
+    width: 60%;
+    left: 20%;
+    top: 12%;
+    margin-bottom: 40px;
 }
 .icon-language{
     display: flex;
-    position: relative;
-    background-color: rgb(156, 156, 156);
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
+    position: static;
+    width: 12%;
+    height: 100%;
+    justify-content: left;
+  
 }
 .icon-html{
-    width: 80px;
-    height: 50px;
+    background: url('https://api.iconify.design/vscode-icons/file-type-html.svg') no-repeat center center / contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
     position: relative;
+    top: 2px;
+}
+.icon-css{
+    background: url('https://api.iconify.design/vscode-icons/file-type-css.svg') no-repeat center center / contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 2px;
+}
+.icon-js{
+    background: url('https://api.iconify.design/logos/javascript.svg') no-repeat center center / contain;
+    background-position: center;
+    background-size: 70%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 2px;
+}
+.icon-react{
+    background: url('https://api.iconify.design/vscode-icons/file-type-reactjs.svg') no-repeat center center / contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 2px;
+}
+.text-space{
+    width: 88%;    
 }
 .title-language{
-    background-color: #ffffff;
+
+    position: relative;
     color: white;
-    height: 40px;
-    font-size: 1.5em;
-    width: 80%;    
+    height: 25px;
+    font-size: 1.2em;
+    width: 100%;    
 }
 .text-language{
-    background-color: #000000;
-    width: 80%;
-    height: 40px;
-    
-    
-    
+    font-size: 0.9em;
+    position: relative; 
+    width: 100%;
+    height: 35px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.795);
+}
+.porcentagem{
+    color: white;
+    position: relative;    
+    width: 100%;
+}
+.porcentagem-texto{
+    position: relative;
+    left: 90%;
+}
+
+.skillbar{
+    width: 100%;
+    height: 7px;
+    background: #000000;
+    background: -webkit-linear-gradient(to right,#757575,  #000000,#000000);
+    background: linear-gradient(to right,#757575, #000000, #000000);
+
+}
+.skillbar-progress-html{
+    background-color: #FE002E;
+    width: 50%;
+    height: 100%;
+}
+
+.skillbar-progress-css{
+    background-color: #FE002E;
+    width: 50%;
+    height: 100%;
+}
+
+.skillbar-progress-js{
+    background-color: #FE002E;
+    width: 15%;
+    height: 100%;
+}
+
+.skillbar-progress-react{
+    background-color: #FE002E;
+    width: 1%;
+    height: 100%;
 }
